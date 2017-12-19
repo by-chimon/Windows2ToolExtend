@@ -31,6 +31,13 @@ namespace Windows2ToolExtend
         public void Waiting()
         {
             toolStripStatusLabel1.Text = "执行中";
+            statusStrip1.BackColor = Color.Red;
+        }
+
+        public void IsOver()
+        {
+            toolStripStatusLabel1.Text = "就绪";
+            statusStrip1.BackColor = Color.OrangeRed;
         }
 
         public static void ReFileManager()
@@ -126,7 +133,7 @@ namespace Windows2ToolExtend
             :ex
             echo OVER";
             CmdHelper.RunCmd(cmd);
-            toolStripStatusLabel1.Text = "就绪";
+            IsOver();
         }
 
         private void 本机密钥查询ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -205,7 +212,7 @@ namespace Windows2ToolExtend
             :ex
             echo OVER";
             CmdHelper.RunCmd(cmd);
-            toolStripStatusLabel1.Text = "就绪";
+            IsOver();
         }
 
         private void Win10教育版KMS激活实验性ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -231,7 +238,7 @@ namespace Windows2ToolExtend
             :ex
             echo OVER";
             CmdHelper.RunCmd(cmd);
-            toolStripStatusLabel1.Text = "就绪";
+            IsOver();
         }
 
         private void 关于ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -259,7 +266,7 @@ namespace Windows2ToolExtend
                     myreg.SetValue("PaintDesktopVersion", "1", RegistryValueKind.DWord);
                     myreg.Close();
                     MessageBox.Show("重启生效");
-                    toolStripStatusLabel1.Text = "就绪";
+                    IsOver();
                 }
                 else
                 {
@@ -272,7 +279,7 @@ namespace Windows2ToolExtend
                     myreg.SetValue("PaintDesktopVersion", "1", RegistryValueKind.DWord);
                     myreg.Close();
                     MessageBox.Show("重启生效");
-                    toolStripStatusLabel1.Text = "就绪";
+                    IsOver();
                 }
             }
             if (comboBox1.Text == "不显示")
@@ -288,7 +295,7 @@ namespace Windows2ToolExtend
                     myreg.SetValue("PaintDesktopVersion", "0", RegistryValueKind.DWord);
                     myreg.Close();
                     MessageBox.Show("重启生效");
-                    toolStripStatusLabel1.Text = "就绪";
+                    IsOver();
                 }
                 else
                 {
@@ -301,7 +308,7 @@ namespace Windows2ToolExtend
                     myreg.SetValue("PaintDesktopVersion", "0", RegistryValueKind.DWord);
                     myreg.Close();
                     MessageBox.Show("重启生效");
-                    toolStripStatusLabel1.Text = "就绪";
+                    IsOver();
                 }
             }
         }
@@ -331,7 +338,7 @@ namespace Windows2ToolExtend
                     {
                         ReFileManager();
                     }
-                    toolStripStatusLabel1.Text = "就绪";
+                    IsOver();
                 }
                 else
                 {
@@ -349,7 +356,7 @@ namespace Windows2ToolExtend
                     {
                         ReFileManager();
                     }
-                    toolStripStatusLabel1.Text = "就绪";
+                    IsOver();
                 }
             }
             if (comboBox2.Text == "不显示")
@@ -370,7 +377,7 @@ namespace Windows2ToolExtend
                     {
                         ReFileManager();
                     }
-                    toolStripStatusLabel1.Text = "就绪";
+                    IsOver();
                 }
                 else
                 {
@@ -388,7 +395,7 @@ namespace Windows2ToolExtend
                     {
                         ReFileManager();
                     }
-                    toolStripStatusLabel1.Text = "就绪";
+                    IsOver();
                 }
             }
         }
@@ -417,7 +424,7 @@ namespace Windows2ToolExtend
                     {
                         ReFileManager();
                     }
-                    toolStripStatusLabel1.Text = "就绪";
+                    IsOver();
                 }
                 else
                 {
@@ -434,7 +441,7 @@ namespace Windows2ToolExtend
                     {
                         ReFileManager();
                     }
-                    toolStripStatusLabel1.Text = "就绪";
+                    IsOver();
                 }
             }
             if (comboBox3.Text == "恢复")
@@ -454,7 +461,7 @@ namespace Windows2ToolExtend
                     {
                         ReFileManager();
                     }
-                    toolStripStatusLabel1.Text = "就绪";
+                    IsOver();
                 }
                 else
                 {
@@ -471,7 +478,7 @@ namespace Windows2ToolExtend
                     {
                         ReFileManager();
                     }
-                    toolStripStatusLabel1.Text = "就绪";
+                    IsOver();
                 }
             }
         }
@@ -495,7 +502,7 @@ namespace Windows2ToolExtend
                     {
                         ReFileManager();
                     }
-                    toolStripStatusLabel1.Text = "就绪";
+                    IsOver();
                 }
                 else
                 {
@@ -512,7 +519,7 @@ namespace Windows2ToolExtend
                     {
                         ReFileManager();
                     }
-                    toolStripStatusLabel1.Text = "就绪";
+                    IsOver();
                 }
             }
             if (comboBox5.Text == "不显示")
@@ -532,7 +539,7 @@ namespace Windows2ToolExtend
                     {
                         ReFileManager();
                     }
-                    toolStripStatusLabel1.Text = "就绪";
+                    IsOver();
                 }
                 else
                 {
@@ -549,7 +556,7 @@ namespace Windows2ToolExtend
                     {
                         ReFileManager();
                     }
-                    toolStripStatusLabel1.Text = "就绪";
+                    IsOver();
                 }
             }
         }
@@ -569,7 +576,7 @@ namespace Windows2ToolExtend
                     myreg.SetValue("Isolation64Bit", "1");
                     myreg.Close();
                     MessageBox.Show("重启电脑生效");
-                    toolStripStatusLabel1.Text = "就绪";
+                    IsOver();
                 }
                 else
                 {
@@ -582,7 +589,7 @@ namespace Windows2ToolExtend
                     myreg.SetValue("Isolation", "1");
                     myreg.Close();
                     MessageBox.Show("重启电脑生效");
-                    toolStripStatusLabel1.Text = "就绪";
+                    IsOver();
                 }
             }
             if (comboBox4.Text == "禁用")
@@ -598,7 +605,7 @@ namespace Windows2ToolExtend
                     myreg.SetValue("Isolation64Bit", "0");
                     myreg.Close();
                     MessageBox.Show("重启电脑生效");
-                    toolStripStatusLabel1.Text = "就绪";
+                    IsOver();
                 }
                 else
                 {
@@ -611,7 +618,7 @@ namespace Windows2ToolExtend
                     myreg.SetValue("Isolation", "0");
                     myreg.Close();
                     MessageBox.Show("重启电脑生效");
-                    toolStripStatusLabel1.Text = "就绪";
+                    IsOver();
                 }
             }
         }
@@ -631,7 +638,7 @@ namespace Windows2ToolExtend
                     myreg.SetValue("DisabledComponents", "255", RegistryValueKind.DWord);
                     myreg.Close();
                     MessageBox.Show("重启电脑生效");
-                    toolStripStatusLabel1.Text = "就绪";
+                    IsOver();
                 }
                 else
                 {
@@ -644,7 +651,7 @@ namespace Windows2ToolExtend
                     myreg.SetValue("DisabledComponents", "255", RegistryValueKind.DWord);
                     myreg.Close();
                     MessageBox.Show("重启电脑生效");
-                    toolStripStatusLabel1.Text = "就绪";
+                    IsOver();
                 }
             }
             if (comboBox6.Text == "恢复")
@@ -677,7 +684,7 @@ namespace Windows2ToolExtend
                     }
                     myreg.Close();
                     MessageBox.Show("重启电脑生效");
-                    toolStripStatusLabel1.Text = "就绪";
+                    IsOver();
                 }
                 else
                 {
@@ -690,7 +697,7 @@ namespace Windows2ToolExtend
                     myreg.SetValue("Isolation", "0");
                     myreg.Close();
                     MessageBox.Show("重启电脑生效");
-                    toolStripStatusLabel1.Text = "就绪";
+                    IsOver();
                 }
             }
         }
@@ -712,7 +719,7 @@ namespace Windows2ToolExtend
                 {
                     ReFileManager();
                 }
-                toolStripStatusLabel1.Text = "就绪";
+                IsOver();
             }
             else
             {
@@ -729,7 +736,7 @@ namespace Windows2ToolExtend
                 {
                     ReFileManager();
                 }
-                toolStripStatusLabel1.Text = "就绪";
+                IsOver();
             }
         }
 
@@ -747,7 +754,7 @@ namespace Windows2ToolExtend
                 sc config WdiSystemHost start= disabled";
                 CmdHelper.RunCmd(cmd);
                 MessageBox.Show("执行成功");
-                toolStripStatusLabel1.Text = "就绪";
+                IsOver();
             }
             if (comboBox7.Text == "恢复")
             {
@@ -759,7 +766,7 @@ namespace Windows2ToolExtend
                 sc start DPS";
                 CmdHelper.RunCmd(cmd);
                 MessageBox.Show("恢复成功");
-                toolStripStatusLabel1.Text = "就绪";
+                IsOver();
             }
         }
 
@@ -791,7 +798,7 @@ namespace Windows2ToolExtend
                     {
                         WipeIconCache();
                     }
-                    toolStripStatusLabel1.Text = "就绪";
+                    IsOver();
                 }
                 else
                 {
@@ -809,7 +816,7 @@ namespace Windows2ToolExtend
                     {
                         WipeIconCache();
                     }
-                    toolStripStatusLabel1.Text = "就绪";
+                    IsOver();
                 }
             }
             if (comboBox8.Text == "恢复")
@@ -846,7 +853,7 @@ namespace Windows2ToolExtend
                     {
                         WipeIconCache();
                     }
-                    toolStripStatusLabel1.Text = "就绪";
+                    IsOver();
                 }
                 else
                 {
@@ -880,7 +887,7 @@ namespace Windows2ToolExtend
                     {
                         WipeIconCache();
                     }
-                    toolStripStatusLabel1.Text = "就绪";
+                    IsOver();
                 }
             }
         }
@@ -890,7 +897,7 @@ namespace Windows2ToolExtend
             Thread th = new Thread(Waiting);
             th.Start();
             ReFileManager();
-            toolStripStatusLabel1.Text = "就绪";
+            IsOver();
         }
 
         private void Button11_Click(object sender, EventArgs e)
@@ -898,7 +905,7 @@ namespace Windows2ToolExtend
             Thread th = new Thread(Waiting);
             th.Start();
             WipeIconCache();
-            toolStripStatusLabel1.Text = "就绪";
+            IsOver();
         }
 
         private void 更新日志ToolStripMenuItem_Click(object sender, EventArgs e)

@@ -179,6 +179,7 @@
             this.附加ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.激活相关ToolStripMenuItem,
             this.关闭程序ToolStripMenuItem});
+            this.附加ToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.附加ToolStripMenuItem.Name = "附加ToolStripMenuItem";
             this.附加ToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
             this.附加ToolStripMenuItem.Text = "附加";
@@ -191,7 +192,7 @@
             this.win10教育版KMS激活实验性ToolStripMenuItem,
             this.本机密钥查询ToolStripMenuItem});
             this.激活相关ToolStripMenuItem.Name = "激活相关ToolStripMenuItem";
-            this.激活相关ToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.激活相关ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.激活相关ToolStripMenuItem.Text = "激活相关";
             // 
             // 企业版KMS激活ToolStripMenuItem
@@ -225,7 +226,7 @@
             // 关闭程序ToolStripMenuItem
             // 
             this.关闭程序ToolStripMenuItem.Name = "关闭程序ToolStripMenuItem";
-            this.关闭程序ToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.关闭程序ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.关闭程序ToolStripMenuItem.Text = "关闭程序";
             this.关闭程序ToolStripMenuItem.Click += new System.EventHandler(this.关闭程序ToolStripMenuItem_Click);
             // 
@@ -234,6 +235,7 @@
             this.关于ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.软件信息ToolStripMenuItem,
             this.更新日志ToolStripMenuItem});
+            this.关于ToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.关于ToolStripMenuItem.Name = "关于ToolStripMenuItem";
             this.关于ToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
             this.关于ToolStripMenuItem.Text = "关于";
@@ -255,7 +257,7 @@
             // 
             // statusStrip1
             // 
-            this.statusStrip1.BackColor = System.Drawing.Color.Coral;
+            this.statusStrip1.BackColor = System.Drawing.Color.OrangeRed;
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
@@ -263,6 +265,7 @@
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 10, 0);
             this.statusStrip1.Size = new System.Drawing.Size(782, 22);
+            this.statusStrip1.SizingGrip = false;
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
