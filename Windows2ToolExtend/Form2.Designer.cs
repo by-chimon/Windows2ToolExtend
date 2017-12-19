@@ -134,6 +134,7 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Form2";
             this.Text = "关于";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

@@ -155,7 +155,7 @@ namespace Windows2ToolExtend
                 string info = "";
                 RegistryKey Key;
                 Key = Registry.LocalMachine;
-                //读取32位操作系统注册表，64位不可用
+                //读取32位操作系统注册表，64位不可用，OEM设备可能不支持
                 RegistryKey myreg;
                 myreg = Key.OpenSubKey("SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\SoftwareProtectionPlatform");
                 info = Convert.ToString(myreg.GetValue("BackupProductKeyDefault"));
@@ -258,11 +258,7 @@ namespace Windows2ToolExtend
                     myreg = Key.OpenSubKey("Control Panel\\Desktop", true);
                     myreg.SetValue("PaintDesktopVersion", "1", RegistryValueKind.DWord);
                     myreg.Close();
-                    DialogResult Warn = MessageBox.Show("是否刷新注册表使其生效，为了避免导致系统不稳定我们建议您重启", "是否刷新注册表", MessageBoxButtons.OKCancel);
-                    if (Warn == DialogResult.OK)
-                    {
-                        ReFileManager();
-                    }
+                    MessageBox.Show("重启生效");
                     toolStripStatusLabel1.Text = "就绪";
                 }
                 else
@@ -275,11 +271,7 @@ namespace Windows2ToolExtend
                     myreg = Key.OpenSubKey("Control Panel\\Desktop", true);
                     myreg.SetValue("PaintDesktopVersion", "1", RegistryValueKind.DWord);
                     myreg.Close();
-                    DialogResult Warn = MessageBox.Show("是否刷新注册表使其生效，为了避免导致系统不稳定我们建议您重启", "是否刷新注册表", MessageBoxButtons.OKCancel);
-                    if (Warn == DialogResult.OK)
-                    {
-                        ReFileManager();
-                    }
+                    MessageBox.Show("重启生效");
                     toolStripStatusLabel1.Text = "就绪";
                 }
             }
@@ -295,11 +287,7 @@ namespace Windows2ToolExtend
                     myreg = Key.OpenSubKey("Control Panel\\Desktop", true);
                     myreg.SetValue("PaintDesktopVersion", "0", RegistryValueKind.DWord);
                     myreg.Close();
-                    DialogResult Warn = MessageBox.Show("是否刷新注册表使其生效，为了避免导致系统不稳定我们建议您重启", "是否刷新注册表", MessageBoxButtons.OKCancel);
-                    if (Warn == DialogResult.OK)
-                    {
-                        ReFileManager();
-                    }
+                    MessageBox.Show("重启生效");
                     toolStripStatusLabel1.Text = "就绪";
                 }
                 else
@@ -312,11 +300,7 @@ namespace Windows2ToolExtend
                     myreg = Key.OpenSubKey("Control Panel\\Desktop", true);
                     myreg.SetValue("PaintDesktopVersion", "0", RegistryValueKind.DWord);
                     myreg.Close();
-                    DialogResult Warn = MessageBox.Show("是否刷新注册表使其生效，为了避免导致系统不稳定我们建议您重启", "是否刷新注册表", MessageBoxButtons.OKCancel);
-                    if (Warn == DialogResult.OK)
-                    {
-                        ReFileManager();
-                    }
+                    MessageBox.Show("重启生效");
                     toolStripStatusLabel1.Text = "就绪";
                 }
             }
@@ -915,6 +899,12 @@ namespace Windows2ToolExtend
             th.Start();
             WipeIconCache();
             toolStripStatusLabel1.Text = "就绪";
+        }
+
+        private void 更新日志ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            updatelog updatelogthing = new updatelog();
+            updatelogthing.ShowDialog();
         }
     }
 }

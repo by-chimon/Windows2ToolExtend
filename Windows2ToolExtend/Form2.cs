@@ -61,5 +61,10 @@ namespace Windows2ToolExtend
         {
             this.Close();
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

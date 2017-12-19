@@ -100,7 +100,7 @@
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(-2, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(786, 111);
             this.panel1.TabIndex = 0;
@@ -140,7 +140,7 @@
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2.Location = new System.Drawing.Point(730, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(42, 24);
             this.pictureBox2.TabIndex = 1;
@@ -152,7 +152,7 @@
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Location = new System.Drawing.Point(22, 28);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(56, 57);
             this.pictureBox1.TabIndex = 0;
@@ -251,6 +251,7 @@
             this.更新日志ToolStripMenuItem.Name = "更新日志ToolStripMenuItem";
             this.更新日志ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.更新日志ToolStripMenuItem.Text = "更新日志";
+            this.更新日志ToolStripMenuItem.Click += new System.EventHandler(this.更新日志ToolStripMenuItem_Click);
             // 
             // statusStrip1
             // 
@@ -305,9 +306,9 @@
             this.groupBox1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.Highlight;
             this.groupBox1.Location = new System.Drawing.Point(13, 123);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(512, 332);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
@@ -316,7 +317,7 @@
             // button9
             // 
             this.button9.Location = new System.Drawing.Point(436, 285);
-            this.button9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button9.Margin = new System.Windows.Forms.Padding(2);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(64, 26);
             this.button9.TabIndex = 32;
@@ -342,7 +343,7 @@
             "执行",
             "恢复"});
             this.comboBox8.Location = new System.Drawing.Point(332, 290);
-            this.comboBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox8.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox8.Name = "comboBox8";
             this.comboBox8.Size = new System.Drawing.Size(92, 20);
             this.comboBox8.TabIndex = 31;
@@ -350,7 +351,7 @@
             // button8
             // 
             this.button8.Location = new System.Drawing.Point(436, 251);
-            this.button8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button8.Margin = new System.Windows.Forms.Padding(2);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(64, 26);
             this.button8.TabIndex = 28;
@@ -366,7 +367,7 @@
             "执行",
             "恢复"});
             this.comboBox7.Location = new System.Drawing.Point(332, 256);
-            this.comboBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox7.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox7.Name = "comboBox7";
             this.comboBox7.Size = new System.Drawing.Size(92, 20);
             this.comboBox7.TabIndex = 27;
@@ -384,7 +385,7 @@
             // button7
             // 
             this.button7.Location = new System.Drawing.Point(332, 218);
-            this.button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(168, 26);
             this.button7.TabIndex = 25;
@@ -405,7 +406,7 @@
             // button6
             // 
             this.button6.Location = new System.Drawing.Point(436, 186);
-            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(64, 26);
             this.button6.TabIndex = 22;
@@ -421,7 +422,7 @@
             "执行",
             "恢复"});
             this.comboBox6.Location = new System.Drawing.Point(332, 190);
-            this.comboBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox6.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(92, 20);
             this.comboBox6.TabIndex = 21;
@@ -439,7 +440,7 @@
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(436, 120);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(64, 26);
             this.button4.TabIndex = 19;
@@ -455,7 +456,7 @@
             "启用",
             "禁用"});
             this.comboBox4.Location = new System.Drawing.Point(332, 125);
-            this.comboBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox4.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(92, 20);
             this.comboBox4.TabIndex = 18;
@@ -478,7 +479,7 @@
             "显示",
             "不显示"});
             this.comboBox5.Location = new System.Drawing.Point(332, 157);
-            this.comboBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox5.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(92, 20);
             this.comboBox5.TabIndex = 16;
@@ -486,7 +487,7 @@
             // button5
             // 
             this.button5.Location = new System.Drawing.Point(436, 152);
-            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(64, 26);
             this.button5.TabIndex = 15;
@@ -517,7 +518,7 @@
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(436, 87);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(64, 26);
             this.button3.TabIndex = 8;
@@ -533,7 +534,7 @@
             "执行",
             "恢复"});
             this.comboBox3.Location = new System.Drawing.Point(332, 92);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox3.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(92, 20);
             this.comboBox3.TabIndex = 7;
@@ -541,7 +542,7 @@
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(436, 55);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(64, 26);
             this.button2.TabIndex = 5;
@@ -557,7 +558,7 @@
             "显示",
             "不显示"});
             this.comboBox2.Location = new System.Drawing.Point(332, 60);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(92, 20);
             this.comboBox2.TabIndex = 4;
@@ -577,7 +578,7 @@
             // 
             this.button1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button1.Location = new System.Drawing.Point(436, 22);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(64, 26);
             this.button1.TabIndex = 2;
@@ -593,7 +594,7 @@
             "显示",
             "不显示"});
             this.comboBox1.Location = new System.Drawing.Point(332, 27);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(92, 20);
             this.comboBox1.TabIndex = 1;
@@ -618,9 +619,9 @@
             this.groupBox2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.groupBox2.ForeColor = System.Drawing.SystemColors.Highlight;
             this.groupBox2.Location = new System.Drawing.Point(538, 123);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(230, 139);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
@@ -675,9 +676,9 @@
             this.groupBox3.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.groupBox3.ForeColor = System.Drawing.SystemColors.Highlight;
             this.groupBox3.Location = new System.Drawing.Point(538, 275);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox3.Size = new System.Drawing.Size(230, 180);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
@@ -686,7 +687,7 @@
             // button11
             // 
             this.button11.Location = new System.Drawing.Point(18, 106);
-            this.button11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button11.Margin = new System.Windows.Forms.Padding(2);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(194, 31);
             this.button11.TabIndex = 1;
@@ -697,7 +698,7 @@
             // button10
             // 
             this.button10.Location = new System.Drawing.Point(18, 41);
-            this.button10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button10.Margin = new System.Windows.Forms.Padding(2);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(194, 31);
             this.button10.TabIndex = 0;
@@ -720,7 +721,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Padding = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.Text = "Windows2Tool Extend";

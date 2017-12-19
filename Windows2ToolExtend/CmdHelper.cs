@@ -9,7 +9,7 @@ namespace Windows2ToolExtend
 {
     class CmdHelper
     {
-        private static string CmdPath = @"C:\Windows\System32\cmd.exe";
+        private static string CmdPath = @"cmd";
         /// <summary>
         /// 执行cmd命令
         /// 多命令请使用批处理命令连接符：
@@ -24,7 +24,7 @@ namespace Windows2ToolExtend
         public static void RunCmd(string cmd)
         {
             //&exit
-            cmd = cmd.Trim().TrimEnd('&') + "&exit";//说明：不管命令是否成功均执行exit命令，否则当调用ReadToEnd()方法时，会处于假死状态
+            cmd = cmd.Trim().TrimEnd('&') + "&exit";//不管命令是否成功均执行exit命令，否则当调用ReadToEnd()方法时，会处于假死状态
             using (Process p = new Process())
             {
                 p.StartInfo.FileName = CmdPath;
