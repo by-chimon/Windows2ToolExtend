@@ -115,7 +115,7 @@ namespace Windows2ToolExtend
             Thread th = new Thread(Waiting);
             th.Start();
             string cmd = @"echo.&echo  连接KMS服务器...
-            ping www.33161000.com | findstr TTL > nul && goto yes || goto no
+            ping www.qq.com | findstr TTL > nul && goto yes || goto no
 
             :yes
             cls
@@ -194,7 +194,7 @@ namespace Windows2ToolExtend
             Thread th = new Thread(Waiting);
             th.Start();
             string cmd = @"echo.&echo  连接KMS服务器...
-            ping www.33161000.com | findstr TTL > nul && goto yes || goto no
+            ping www.qq.com | findstr TTL > nul && goto yes || goto no
 
             :yes
             cls
@@ -220,7 +220,7 @@ namespace Windows2ToolExtend
             Thread th = new Thread(Waiting);
             th.Start();
             string cmd = @"echo.&echo  连接KMS服务器...
-            ping www.33161000.com | findstr TTL > nul && goto yes || goto no
+            ping www.qq.com | findstr TTL > nul && goto yes || goto no
 
             :yes
             cls
@@ -912,6 +912,16 @@ namespace Windows2ToolExtend
         {
             updatelog updatelogthing = new updatelog();
             updatelogthing.ShowDialog();
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 检查更新ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

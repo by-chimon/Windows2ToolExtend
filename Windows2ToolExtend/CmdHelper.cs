@@ -39,7 +39,7 @@ namespace Windows2ToolExtend
                 p.StandardInput.WriteLine(cmd);
                 p.StandardInput.AutoFlush = true;
 
-                //获取cmd窗口的输出信息,这个地方我在vs2017以下版本引用失败了
+                //获取cmd窗口的输出信息
                 //output = p.StandardOutput.ReadToEnd();
                 p.WaitForExit();//等待程序执行完退出进程
                 p.Close();

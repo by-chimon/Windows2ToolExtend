@@ -82,6 +82,7 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
+            this.检查更新ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -179,7 +180,8 @@
             this.附加ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.激活相关ToolStripMenuItem,
             this.关闭程序ToolStripMenuItem});
-            this.附加ToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.附加ToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.附加ToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.White;
             this.附加ToolStripMenuItem.Name = "附加ToolStripMenuItem";
             this.附加ToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
             this.附加ToolStripMenuItem.Text = "附加";
@@ -234,8 +236,9 @@
             // 
             this.关于ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.软件信息ToolStripMenuItem,
-            this.更新日志ToolStripMenuItem});
-            this.关于ToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.更新日志ToolStripMenuItem,
+            this.检查更新ToolStripMenuItem});
+            this.关于ToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.关于ToolStripMenuItem.Name = "关于ToolStripMenuItem";
             this.关于ToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
             this.关于ToolStripMenuItem.Text = "关于";
@@ -384,6 +387,7 @@
             this.label10.Size = new System.Drawing.Size(174, 12);
             this.label10.TabIndex = 26;
             this.label10.Text = "禁用疑难解答和系统诊断服务";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // button7
             // 
@@ -709,6 +713,13 @@
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.Button10_Click);
             // 
+            // 检查更新ToolStripMenuItem
+            // 
+            this.检查更新ToolStripMenuItem.Name = "检查更新ToolStripMenuItem";
+            this.检查更新ToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.检查更新ToolStripMenuItem.Text = "检查更新(实验性)";
+            this.检查更新ToolStripMenuItem.Click += new System.EventHandler(this.检查更新ToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -802,6 +813,7 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.ToolStripMenuItem 检查更新ToolStripMenuItem;
     }
 }
 
